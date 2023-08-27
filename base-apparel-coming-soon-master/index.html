@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Josefin Sans", sans-serif;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background: linear-gradient(
+          135deg,
+          hsl(0, 0%, 100%),
+          hsl(0, 100%, 98%)
+        );
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+      }
+      .container .content {
+        width: 100%;
+        height: auto;
+      }
+      .content {
+        padding-left: 12rem;
+      }
+      .content span {
+        font-size: 74px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+      }
+      .text-pink {
+        color: hsl(0, 36%, 70%);
+        font-weight: 300;
+      }
+      .text-red {
+        color: hsl(0, 6%, 24%);
+      }
+      .logo {
+        margin-bottom: 84px;
+      }
+      .content p {
+        font-size: 16px;
+        color: hsl(0, 36%, 70%);
+        margin-top: 24px;
+        line-height: 1.5;
+      }
+      .hero-img {
+        height: 100vh;
+      }
+      .email-form {
+        width: 50%;
+        border-radius: 50px;
+        overflow: hidden;
+        border: 1px solid hsl(0, 80%, 86%);
+        margin-top: 24px;
+        display: inline-block;
+      }
+      .email-form input[type="email"]:focus {
+        outline: none;
+      }
+
+      .email-form input {
+        width: 50%;
+        border: none;
+        margin-top: 20px;
+        margin-left: 18px;
+      }
+      .email-form input::placeholder {
+        color: hsl(0, 80%, 86%);
+      }
+      .email-form button {
+        float: right;
+        border: none;
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        padding: 14px 32px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 3px rgba(134, 79, 79, 0.3);
+      }
+      .email-form button:hover {
+        background: hsl(0, 70%, 83%);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+        <span class="text-pink">We're<br /></span
+        ><span class="text-red">
+          coming<br />
+          soon</span
+        >
+        <p>
+          Hello fellow shoppers! We're currently building our<br />
+          new fashion store. Add your email below to stay up-to-date with<br />
+          announcements and our launch deals.
+        </p>
+        <div class="email-form">
+          <input type="email" placeholder="Email Address" />
+          <button>
+            <img src="images/icon-arrow.svg" alt="left-arrow" />
+          </button>
+        </div>
+      </div>
+      <img
+        class="hero-img"
+        src="images/hero-desktop.jpg"
+        alt="picture of girl"
+      />
+    </div>
+  </body>
+</html>
